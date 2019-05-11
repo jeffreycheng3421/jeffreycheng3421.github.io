@@ -26,7 +26,9 @@ navbar-links:
   About Me: "aboutme"
   Resume: "resume"
   Resources:
-    - GitHub Pages: "https://pages.github.com/"
+    -Vanderbilt: "https://www.vanderbilt.edu/"
+    -Six Prizes: "https://sixprizes.com/"
+    -fivethirtyeight: "https://fivethirtyeight.com/"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
