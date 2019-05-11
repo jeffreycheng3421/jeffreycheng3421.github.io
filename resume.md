@@ -1,4 +1,4 @@
-**[Academic Background]{.underline}**
+**Academic Background**
 
 -   Vanderbilt University, Nashville, Tennessee
 
@@ -12,7 +12,7 @@
 -   Courses planned for Fall 2019 include: Intro to Analysis, Ordinary
     Differential Equations, Abstract Algebra
 
-**[Work Experience:]{.underline}**
+**[Work Experience:]**
 
 -   Head/Special Needs Program Instructor, True Martial Arts (October
     2014-August 2018, May 2019-August 2019)
@@ -27,12 +27,12 @@
     -   Taught summer camp lessons about the local environment and led
         hikes through forests for youth students
 
-**[Skills:]{.underline}**
+**[Skills:]**
 
 -   Java, R, Microsoft Office, LaTeX, Adobe Suite (Photoshop,
     Illustrator)
 
-**[Other Organizations & Activities:]{.underline}**
+**[Other Organizations & Activities:]**
 
 -   Asian American Student Association Member
 
@@ -42,7 +42,7 @@
 
     -   Volunteer in food/homeless shelters in Nashville
 
-**[Projects:]{.underline}**
+**[Projects:]**
 
 -   Link to my website can be found here:
 	https://jeffreycheng3421.github.io/
