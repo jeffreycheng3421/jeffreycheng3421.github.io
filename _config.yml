@@ -24,6 +24,7 @@ description: my projects + what I am thinking about
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Resume: "resume"
   Resources:
     - GitHub Pages: "https://pages.github.com/"
 
