@@ -63,7 +63,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+# rss: true
   email: "jeffrey.t.cheng@vanderbilt.edu"
   github: jeffreycheng3421
 #  reddit: yourname
@@ -112,7 +112,7 @@ social-network-links:
 
 # Staticman support
 staticman:
-  repository : jeffreycheng3421
+  repository : jcheng3421
   branch     : master
   endpoint   : # URL of your own deployment (with trailing slash) (will fallback to a public GitLab instance)
   reCaptcha:
