@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Flygon 2014
+image: /img/BW7_EN_99.png
 ---
 Recently, I've been tinkering with a Flygon/Accelgor/Dusknoir list from the Nationals/Worlds 2014 deck.
 
