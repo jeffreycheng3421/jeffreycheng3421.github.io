@@ -25,10 +25,6 @@ description: my projects + what I am thinking about
 navbar-links:
   About Me: "aboutme"
   Resume: "resume"
-  Resources:
-    -Vanderbilt: "https://www.vanderbilt.edu/"
-    -Six Prizes: "https://sixprizes.com/"
-    -fivethirtyeight: "https://fivethirtyeight.com/"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
