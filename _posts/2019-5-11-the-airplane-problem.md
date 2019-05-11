@@ -6,7 +6,7 @@ Problem: one hundred people line up to board an airplane. Each has a boarding pa
 
 Simple intuition would guide one to believe that the answer is very small. For example, one specific example of a success is if the first person sits in their assigned seat. Then, everyone else sits in their assigned seat and the last person will sit in their assigned seat. However, the probability of this occuring is only 0.01. My guess was that integrating the probabilities of all the possible success would end up with a very low total probability.
 
-This is incorrect. The problem can be solved through Monte Carlo, but after further thought and discussion with others (Anna Zhang) we can to a much more elegant solution:
+This is incorrect. The problem can be solved through Monte Carlo, but after further thought and discussion with others (Anna Zhang) we came to a much more elegant solution:
 
 We are presented with two scenarios: the problem will immediately end if a displaced person (including the first person!) randomly chooses the first person's seat or a displaced person randomly chooses the last person's seat. Because these two possibilities are equally likely at any point in the problem, the answer is 1/2.
 
