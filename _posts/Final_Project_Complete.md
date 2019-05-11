@@ -1,3 +1,12 @@
+---
+layout: post
+title: Analysis of U.S. racial/economic differentials as related to police killings
+subtitle: Final project for MATH2820 lab at Vanderbilt University
+gh-repo: daattali/beautiful-jekyll
+tags: [fivethirtyeight]
+comments: true
+---
+
 INTRODUCTION: We analyzed a data set we found on fivethirtyeight on
 police killings throughout the United States and tried to find some
 correlations between the number of police killings and the racial
