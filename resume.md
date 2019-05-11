@@ -1,4 +1,4 @@
-**Academic Background**
+**[Academic Background:]**
 
 -   Vanderbilt University, Nashville, Tennessee
 
