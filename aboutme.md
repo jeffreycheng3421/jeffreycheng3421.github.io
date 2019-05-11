@@ -1,16 +1,5 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
-
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My name is Jeffrey. I'm currently a 2nd year student at Vanderbilt University studying mathematics. I'm interested in statistics, probability, and data analysis projects in R. On the side, I play the Pokemon Trading Card Game (used to play more competitively, as of recent I am a more casual player) and teach martial arts. 
