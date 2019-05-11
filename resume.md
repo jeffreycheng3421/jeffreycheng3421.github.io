@@ -44,5 +44,5 @@
 
 **Projects:**
 
--   Link to my website can be found here:
-	https://jeffreycheng3421.github.io/
+-   Link to my website can be found [here](https://jeffreycheng3421.github.io/)
+
