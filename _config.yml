@@ -48,6 +48,7 @@ footer-link-col: "#404040"
 # instead of colour
 
 navbar-img: "/img/wave-textures-white-background-vector_53876-60286.jpg"
+navbar-img-repeat: no-repeat;
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
