@@ -25,6 +25,9 @@ description: my projects + what I am thinking about
 navbar-links:
   About Me: "aboutme"
   Resume: "resume"
+  Pokemon Decklists: "https://jeffreycheng3421.github.io/tags/#Pokemon"
+  Projects in R: "https://jeffreycheng3421.github.io/tags/#R"
+  
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
