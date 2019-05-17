@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flygon 2014
+title: Flygon-Accelgor 2014
 tags: [Pokemon]
 ---
 Recently, I've been tinkering with a Flygon/Accelgor/Dusknoir list from the Nationals/Worlds 2014 format.
