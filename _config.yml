@@ -24,9 +24,10 @@ description: my projects + what I am thinking about
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resume: "resume"
   Pokemon Decklists: "https://jeffreycheng3421.github.io/tags/#Pokemon"
-  Projects in R: "https://jeffreycheng3421.github.io/tags/#R"
+  Projects in R: "https://jeffreycheng3421.github.io/tags/#Project"
+  Resume: "resume"
+ 
   
 
 # If you want to have an image logo in the top-left corner instead of the title text,
