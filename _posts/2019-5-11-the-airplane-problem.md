@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [Probability, Monte Carlo, R]
+tags: [Probability, Monte Carlo, Project]
 title: The Airplane Problem
 ---
 Problem: one hundred people line up to board an airplane. Each has a boarding pass with assigned seat. However, the first person to board has lost his boarding pass and takes a random seat. After that, each person takes the assigned seat if it is unoccupied, and one of unoccupied seats at random otherwise. What is the probability that the last person to board gets to sit in his assigned seat? Problem found [here](https://www.math.ucdavis.edu/~gravner/MAT135A/resources/chpr.pdf). Answer is 1/2.
