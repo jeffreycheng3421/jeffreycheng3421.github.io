@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [R]
+tags: [Project]
 title: Analysis of U.S. Racial/Economic Differentials as Related to Police Killings
 ---
 Project linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Final_Project_Complete.pdf).
