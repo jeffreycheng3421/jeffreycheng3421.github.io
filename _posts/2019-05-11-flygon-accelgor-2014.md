@@ -7,27 +7,27 @@ Recently, I've been tinkering with a Flygon/Accelgor/Dusknoir list from the Nati
 
 Here's the 52 card skeleton that I consider absolutely necessary:
 
-Pokemon:
-4-1-3 Flygon
-2-0-2 Dusknoir
-2-2 Accelgor
+Pokemon:<br>
+4-1-3 Flygon<br>
+2-0-2 Dusknoir<br>
+2-2 Accelgor<br>
 
-Trainers:
-4 Skyla
-4 N
-2 Colress
-4 Tropical Beach
-4 Ultra Ball
-4 Rare Candy
-4 Float Stone
-3 Level Ball
-1 Max Potion
-1 Startling Megaphone
-1 Sacred Ash
-1 Dowsing Machine
+Trainers:<br>
+4 Skyla<br>
+4 N<br>
+2 Colress<br>
+4 Tropical Beach<br>
+4 Ultra Ball<br>
+4 Rare Candy<br>
+4 Float Stone<br>
+3 Level Ball<br>
+1 Max Potion<br>
+1 Startling Megaphone<br>
+1 Sacred Ash<br>
+1 Dowsing Machine<br>
 
-Energy:
-4 DCE
+Energy:<br>
+4 DCE<br>
 
 I've elected to do +1 Flygon, +1 Dusclops, +1 Shelmet, +1 Mewtwo EX, +1 Colress, +1 Professor Juniper, +1 Max Potion, +1 Startling Megaphone to round out my 60.
 
