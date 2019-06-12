@@ -1,0 +1,216 @@
+\documentclass{article}
+
+\title{On The Monty Hall Problem: An Abstraction Through Monte Carlo}
+\date{06-03-19}
+\author{Jeffrey Cheng}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{color}
+\usepackage{listings}
+\lstset{ %
+language=R,                % choose the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it is 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,           % adds a frame around the code
+tabsize=2,          % sets default tabsize to 2 spaces
+captionpos=b,           % sets the caption-position to bottom
+breaklines=true,        % sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)}          % if you want to add a comment within your code
+}
+
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+This paper provides various methods of looking at the Monty Hall Problem. We will first look at the base case, in which there are 3 doors, intuitively. Then, we will go over the Monte Carlo Simulation for the base case. After that, we will look at cases where the number of doors increases to an arbitrary $n$ number of doors. Then, we will go over the Monte Carlo Simulation for these cases. 
+\break \break
+For those unfamiliar with the problem, it is stated here: Suppose you’re on a game show, and you’re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what’s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, “Do you want to pick door No. 2?” Is it to your advantage to switch your choice?
+
+\section{Base Case: $n$ = 3}
+
+\subsection{Initial Explanation}
+The choice that Monty is giving you is actually a choice between your original door and the 2 remaining doors, as if he had not opened any door at all. The two doors that were not initially chosen either contain $I:$ a goat and a car or $II:$ two goats. Monty opens a door and shows you a goat. It was already known that one of the other two doors contained a goat (regardless of which door you first chose) so Monty effectively has not given you any "new" information. What he has done, however, is created a situation in which picking the last door is effectively the same as picking both doors that were not chosen initially. This means that you are effectively making a choice between one random door and two random doors, which give probabilities of 1/3 and 2/3 respectively. So the right answer is that you should switch.
+
+\subsection{Axiomatically}
+It may also be helpful to look at this through the axioms of probability. 
+\break\break
+\begin{Large}
+\textsection $1.1$
+\end{Large}
+\begin{enumerate}[I]
+	\item $P(A) \geq$ 0 $\forall$  $A$ $\in S$
+	\item $P(S) = 1$
+	\item $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+\end{enumerate}
+Let $A_{1}, A_{2}, A_{3}$ be the event that the car is behind either door 1, 2, or 3 respectively. It is trivial to see that $P(A_{1}) = P(A_{2}) = P(A_{3}) = 1/3$. Let $A_{p}$ be the event that the door the player chose is the door the car is behind, with p being either 1, 2, or 3. $P(A_{p})$ = 1/3: $P(A_{p})$ is either $P(A_{1})$, $P(A_{2})$, or $P(A_{3})$, which all have probabilities of 1/3. In the initial state:
+\begin{align*}
+	\sum_{x=1}^{3} P(A_{x}) = 1 \\
+\end{align*} 
+Now, lets see how this changes when the host opens one of the doors. 
+\break \break
+Let $A_{np}$ be the event that the car is behind the door that is closed that was not chosen by the player. In our new, "secondary" state, $A_{p} + A_{np} = S$. By Axiom $II$, $P(S) = 1$. $P(A_{p}) = 1/3$: this is not changed from the initial state. So:
+\begin{align*}
+1/3 + P(A_{np}) = 1 \\
+P(A_{np}) = 1-(1/3) \\
+P(A_{np}) = 2/3 \\
+\end{align*}
+\subsection{Monte Carlo Simulation}
+I created a Monte Carlo Simulation for this situation.
+\begin{lstlisting}
+```{r}
+sample_size <- 10000
+count <- 0
+
+varSamp <- function(x) {
+  if (length(x) <= 1) {
+    return(x)
+  } else {
+    return(sample(x, 1))
+  }
+}
+\end{lstlisting}
+In this part, a sample size for the simulation is created and a function to sample a list regardless of length is created. The preset "sample" function has issues sampling from a list of size 1, which may occur in this simulation.
+\begin{lstlisting}
+vals <- 1:3
+for(i in 1:sample_size) {
+  doors <- array(0, dim = c(1, 3))
+  #set a random door to have the car behind it (the number 1)
+  car_door <- sample(vals, 1, replace = TRUE)
+  doors[car_door] <- 1
+  #player picks a random door
+  init_door <- sample(vals, 1, replace = TRUE)
+\end{lstlisting}
+The structure of the simulation is created here. Three doors are represented as an array of three elements, all initiated to 0. The door with the car behind it is randomly chosen and the respective door is incremented in value by one. The same is done for the door that the player chooses.
+\begin{lstlisting}
+  can_open <- 1:3
+  indexes <- c(init_door, car_door)
+  indexes <- sort(indexes, decreasing = TRUE)
+  if(indexes[1] != indexes[2]) {
+    for(i in 1:2) {
+    can_open <- can_open[-indexes[i]]
+    }
+  } else ]
+    can_open <- can_open[-indexes[1]]
+  }
+\end{lstlisting}
+This code processes which doors can be opened by the host (sorts out which doors are not already chosen by the user and do not have the car behind them).
+\begin{lstlisting}
+opened_door <- varSamp(can_open)
+  new_door <- 1:3
+  indexes2 <- c(init_door, opened_door)
+  indexes2 <- sort(indexes2, decreasing = TRUE)
+  for(i in 1:2) {
+    new_door <- new_door[-indexes2[i]]
+    }
+\end{lstlisting}
+The door to be opened is chosen.
+\begin{lstlisting}
+doors[new_door] <- doors[new_door] + 1
+  if(doors[car_door] == 2) {
+    count <- count + 1
+  }
+}
+print(count/sample_size)
+\end{lstlisting}
+The switch is made. If any door in the array has a value of 2, then the car door and the player's door are the same and a win is represented, causing the program to increment the count of wins by 1.
+If the seed is set to 100 (set.seed(100)) and a sample size of 10000 is used, the result is 0.6647.
+
+\section{$n$ doors}
+
+\subsection{Axiomatically}
+We can extend the argument for 3 doors that used the axioms of probability (See: \textsection $1.1$) to prove that for $n$ doors, the probability of success after switching is $n-1/n$. Let $n \in \mathbb{Z}$ be the number of doors available to choose and let $D$ be the set of all $n$. Let $A_{1}, A_{2}, A_{3}, \ldots, A_{n}$ be the event that the car is behind either door 1, 2, 3, \ldots, $n$ respectively. It is trivial to see that $P(A_{1}) = P(A_{2}) = P(A_{3}) = \ldots = P(A_{n}) = 1/n$. Let $A_{p}$ be the event that the door the player chose is the door the car is behind, where p $\in D$. $P(A_{p})$ = 1/$n$. In the initial state, 
+\begin{align*}
+	\sum_{x=1}^{n} P(A_{x}) = 1 \\
+\end{align*}
+Let $A_{np}$ be the event that the car is behind the door that is closed that was not chosen by the player. In our new, "secondary" state, $A_{p} + A_{np} = S$. By Axiom $II$, $P(S) = 1$. $P(A_{p}) = 1/n$: this is not changed from the initial state. So:
+\begin{align*}
+1/n + P(A_{np}) = 1 \\
+P(A_{np}) = 1-(1/n) \\
+P(A_{np}) = (n-1)/n \\
+\end{align*}
+\subsection{Monte Carlo Simulation}
+I created a Monte Carlo Simulation for this situation as well.
+\begin{lstlisting}
+```{r}
+sample_size <- 10000
+count <- 0
+n <- 5
+
+#function to sample regardless of length of list of available doors
+varSamp <- function(x) {
+  if (length(x) <= 1) {
+    return(x)
+  } else {
+    return(sample(x, 1, replace = FALSE))
+  }
+}
+\end{lstlisting}
+This part is largely the same. The only new addition is that a variable for $n$, the number of doors, is initialized. 
+\newpage
+\begin{lstlisting}
+vals <- 1:n
+for(i in 1:sample_size) {
+  doors <- array(0, dim = c(1, n))
+  #set a random door to have the car behind it (the number 1)
+  car_door <- sample(vals, 1, replace = TRUE)
+  doors[car_door] <- 1
+  #player picks a random door
+  init_door <- sample(vals, 1, replace = TRUE)
+  
+  can_open <- 1:n
+  indexes <- c(init_door, car_door)
+  indexes <- sort(indexes, decreasing = TRUE)
+  if(indexes[1] != indexes[2]) {
+    for(i in 1:2) {
+    can_open <- can_open[-indexes[i]]
+    }
+  } else {
+    can_open <- can_open[-indexes[1]]
+  }
+\end{lstlisting}
+This section is the same, with the arrays and sampling methods adjusted appropriately for having $n$ doors.
+\begin{lstlisting}
+opened_doors <- list()
+  for(i in 1:(n-2)) {
+    door <- varSamp(can_open)
+    opened_doors <- c(opened_doors, door)
+    can_open <- can_open[which(can_open != door)] 
+  }
+  new_door <- 1:n
+  indexes2 <- c(init_door, opened_doors)
+  indexes2 <- as.numeric(as.character(unlist(indexes2)))
+  indexes2 <- sort(indexes2, decreasing = TRUE)
+  for(i in 1:(n-1)) {
+    new_door <- new_door[-indexes2[i]]
+    }
+\end{lstlisting}
+The door to be opened is chosen. This section required the most revision. This number of doors are opened is more than one, and therefore must be created in list format. Furthermore, the list of doors that can be opened must constantly be revised as doors are chosen so that a door is not repeatedly opened. 
+\begin{lstlisting}
+doors[new_door] <- doors[new_door] + 1
+  if(doors[car_door] == 2) {
+    count <- count + 1
+  }
+}
+print(count/sample_size)
+\end{lstlisting}
+This section is the same as well. The switch and deterministic calculation are made. 
+
+\newpage
+\section{Conclusion}
+In this paper, I showed that it is advantageous to switch doors in two ways. After that, I showed my Monte Carlo Simulation for the case where $n$ = 3. I then used the same axiomatic argument for $n$ = 3 to show that a more general result holds for any $n$. I then showed my Monte Carlo Simulation for this more general case. 
+
+\end{document}
