@@ -9,4 +9,4 @@ I've been trying to start using LaTeX and start writing up my papers in a more a
 <br><br>
 LaTeX writeup linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Monty%20Hall%20Monte%20Carlo%20Abstraction.pdf).
 <br><br>
-Previous posts regarding Monty Hall can be found [here](https://jeffreycheng3421.github.io/2019-05-16-monty-hall/) and [here(part 2)]:(https://jeffreycheng3421.github.io/2019-05-23-monty-hall-part-two/).
+Previous posts regarding Monty Hall can be found [here](https://jeffreycheng3421.github.io/2019-05-16-monty-hall/) and [here(part 2)](https://jeffreycheng3421.github.io/2019-05-23-monty-hall-part-two/).
