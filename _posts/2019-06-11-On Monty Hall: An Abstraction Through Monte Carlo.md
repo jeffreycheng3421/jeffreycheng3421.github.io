@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [Probability, Monte Carlo, Project]
-title: On Monty Hall: An Abstraction Through Monte Carlo
+title: Monty Hall — An Abstraction Through Monte Carlo
 ---
 I was thinking about Monte Carlo some more and started to wonder about what the result would be if the number of doors was increased, and the game show host opened all the doors but one. It's fairly obvious after looking at n=4, n=5, ... , etc. that the probability of the car being behind the remaining door that was not initially picked is (n-1)/n, but I wanted to prove this more rigorously. I made a Monte Carlo Simulation for this scenario as well, alongside aproaching both the base case (n=3) and the more abstract case from a new perspective using the axioms of probability.
 <br><br>
