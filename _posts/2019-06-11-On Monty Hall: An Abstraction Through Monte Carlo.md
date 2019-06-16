@@ -7,6 +7,6 @@ I was thinking about Monty Hall some more and started to wonder about what the r
 <br><br>
 I've been trying to start using LaTeX and start writing up my papers in a more academic format, so this most recent project is done in LaTeX. If anyone has any advice about how I could improve my formatting or syntax, please comment! 
 <br><br>
-LaTeX writeup linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Monty%20Hall%20Monte%20Carlo%20Abstraction.pdf).
+LaTeX writeup linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Monty%20Hall%20Paper.pdf).
 <br><br>
 Previous posts regarding Monty Hall can be found [here](https://jeffreycheng3421.github.io/2019-05-16-monty-hall/) and [here(part 2)](https://jeffreycheng3421.github.io/2019-05-23-monty-hall-part-two/).
