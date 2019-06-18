@@ -24,7 +24,7 @@ description: my projects + what I am thinking about
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Projects: "https://jeffreycheng3421.github.io/tags/#Project"
+  Projects: "projects"
   Resume: "https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/JCResumeSum2019.pdf"
  
   
