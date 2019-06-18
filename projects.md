@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 ---
-This page is a collection of my recent projects. They include analysis of various datasets, Monte Carlo Simulations, and primitive writeups of mathematical papers in an academic format.
+This page is a collection of my recent projects. They include analyses of various datasets, Monte Carlo Simulations, and primitive writeups of mathematical papers in an academic format.
 <br><br>
 [On Monty Hall: An Abstraction Through Monte Carlo](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Monty%20Hall%20Paper.pdf)
 <br><br>
