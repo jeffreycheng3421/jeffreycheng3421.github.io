@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [Project]
-title: Analysis of Math vs. Portugese Scores in High School Students
+title: Analysis of Math vs. Portuguese Scores in High School Students
 ---
 Project linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Mvpscore.pdf).
 
