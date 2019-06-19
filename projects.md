@@ -8,7 +8,7 @@ This page is a collection of my recent projects. They include analyses of variou
 <br><br>
 [Analysis of U.S. Racial/Economic Differentials as Related to Police Killings](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Racial%20Differentials%20Project%20Writeup.pdf)
 <br><br>
-[The Airplane Problem](https://www.math.ucdavis.edu/~gravner/MAT135A/resources/chpr.pdf)
+[The Airplane Problem - Monte Carlo Simulation](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Airplane_Problem.pdf)
 <br><br>
 [Average Dimensions of Various Iris Species](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Iris%20Clustering.pdf)
 <br><br>
