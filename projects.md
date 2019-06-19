@@ -10,4 +10,7 @@ This page is a collection of my recent projects. They include analyses of variou
 <br><br>
 [The Airplane Problem](https://www.math.ucdavis.edu/~gravner/MAT135A/resources/chpr.pdf)
 <br><br>
+[Average Dimensions of Various Iris Species](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Iris%20Clustering.pdf)
+<br><br>
 [Analysis of Math vs. Portuguese Scores in High School Students](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Mvpscore.pdf)
+<br><br>
