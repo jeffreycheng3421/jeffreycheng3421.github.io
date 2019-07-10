@@ -25,8 +25,8 @@ description: my projects + what I am thinking about
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-  Resume: "https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/JTCResumeFall2019.pdf"
   Books: "reading"
+  Resume: "https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/JTCResumeFall2019.pdf"
  
   
 
