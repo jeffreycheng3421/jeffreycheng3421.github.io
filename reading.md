@@ -2,15 +2,16 @@
 layout: page
 title: Books: What I've Been Reading
 ---
-This page is a collection of my recent projects. They include analyses of various datasets, Monte Carlo Simulations, and primitive writeups of mathematical papers in an academic format.
+This is a collection of everything I've read recently that I find interesting. They include biographies, short stories, and books.
 <br><br>
-[On Monty Hall: An Abstraction Through Monte Carlo](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Monty%20Hall%20Paper.pdf)
+The Bible: Books of Genesis, Exodus, & Luke
 <br><br>
-[Analysis of U.S. Racial/Economic Differentials as Related to Police Killings](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Racial%20Differentials%20Project.pdf)
+David Brooks — The Second Mountain
 <br><br>
-[The Airplane Problem - Monte Carlo Simulation](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Airplane%20Problem%20Writeup.pdf)
+Cass Sunstein — #republic
 <br><br>
-[Average Dimensions of Various Iris Species](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Iris%20Clustering.pdf)
+Preet Bharara — Doing Justice
 <br><br>
-[Analysis of Math vs. Portuguese Scores in High School Students](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/rpdfs/Math%3APor%20Anal.pdf)
+Zhuangzhi — [Butterfly Dream](http://www2.hawaii.edu/~freeman/courses/phil494/10.%20Zhuangzi%27s%20Butterfly%20Dream.pdf)
 <br><br>
+Jorge Luis Borges — [The Garden of Forking Paths](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt)
