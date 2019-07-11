@@ -4,7 +4,7 @@ title: Books: What I've Been Reading
 ---
 This is a collection of everything I've read recently that I find interesting. They include biographies, short stories, and books.
 <br><br>
-The Bible: Books of Genesis, Exodus, & Luke
+The Bible — Books of Genesis, Exodus, & Luke
 <br><br>
 David Brooks — The Second Mountain
 <br><br>
