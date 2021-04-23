@@ -17,18 +17,13 @@ baseurl: ""
 title: Jeffrey Cheng
 
 # Short description of your site
-description: my projects + what I am thinking about
+description: a portfolio of my science reporting work
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Projects: "projects"
-  Books: "reading"
-  Resume: "https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/Jeffrey%20Cheng%20Resume.pdf"
- 
-  
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
