@@ -1,8 +1,8 @@
 ---
 layout: post
 tags: [Project, Anthropology, News Story]
-title: Mystery of Ancient Conch Shell Solved!
+title: News Story—Mystery of Ancient Conch Shell Solved!
 ---
-Story linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/CSET2100/ShellStory.pdf).
+Story linked [here](https://drive.google.com/file/d/1yyTOqx1ypxv3u8j1QbMkpfIApzcOn491/view?usp=sharing).
 
 This was done for my CSET2100 class at Vanderbilt University, Spring 2021.
