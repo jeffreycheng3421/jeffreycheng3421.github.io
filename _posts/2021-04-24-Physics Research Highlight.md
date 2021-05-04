@@ -5,6 +5,6 @@ title: Physics Research Highlight
 ---
 This research highlight was written for my science writing class, CSET2100, at Vanderbilt University in the spring of 2021.
 
-Project linked [here](https://nbviewer.jupyter.org/github/jeffreycheng3421/jeffreycheng3421.github.io/blob/master/CSET2100/PhysicsResearchHighlight.pdf)
+Project linked [here](https://drive.google.com/file/d/1yraQim4n54o1PmwJf0gq_r1dbsz_JGrt/view?usp=sharing)
 <br><br>
 
