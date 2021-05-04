@@ -1,4 +1,3 @@
-
 ---
 layout: post
 tags: [Project, Marine Biology, News Story, Research Highlight, Essay, Final Project]
